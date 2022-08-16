@@ -1,0 +1,107 @@
+* {
+  font-family: "Noto Sans TC", sans-serif;
+}
+.about {
+  height: 100vh;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../image/2322493.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+}
+.photo {
+  text-align: center;
+  & img {
+    width: 200px;
+    border-radius: 50%;
+  }
+}
+@media (max-width: 767px) {
+  .photo img {
+    width: 200px;
+  }
+}
+.motto p {
+  color: #fff;
+}
+.info {
+  text-align: center;
+  color: #fff;
+  & a {
+    color: #fff;
+  }
+}
+
+.skill {
+  & h2 {
+    font-size: 3rem;
+    text-align: center;
+    position: relative;
+    &::before {
+      content: "";
+      height: 3px;
+      width: 8rem;
+      margin-bottom: -10px;
+      background: #f00;
+      position: absolute;
+      bottom: 0;
+    }
+  }
+  & h4 {
+    text-align: center;
+  }
+}
+
+.portfolio {
+  height: 100%;
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)),
+    url(../image/portfolio-bg.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  & h2 {
+    text-align: center;
+    padding-top: 30px;
+    box-sizing: border-box;
+    font-size: 3rem;
+  }
+  & a {
+    color: #00f;
+  }
+}
+.timeline {
+  position: relative;
+  &:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    bottom: 0;
+    width: 3px;
+    transform: translateX(-50%);
+    background: #000;
+  }
+}
+.timeline-pointer {
+  position: relative;
+  &:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    bottom: 0;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    border: 1px solid #000;
+    transform: translateX(-50%);
+    background: #000;
+    z-index: 1;
+  }
+}
+@media (max-width: 767px) {
+  .timeline:after,
+  .timeline-pointer:after {
+    display: none;
+  }
+}

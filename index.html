@@ -4,29 +4,51 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>關於我</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+      integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./css/all.css" />
   </head>
   <body>
     <div class="about">
-      <div class="container py-3">
+      <div class="container pt-5">
         <div class="row justify-content-center">
-          <div class="photo col-12 mb-sm-5">
-              <img src="./image/photo.jpg" class="img-fluid img-thumbnail" alt="photo" />
-              <div class="motto col-12 mt-4">
-                <p>年輕的時候有觸手可及的未來</p>
-                <p>年老的時候就只剩遠在天邊的過去</p>
-              </div>
+          <div class="photo col mb-sm-5">
+            <img src="./image/photo.jpg" class="img-fluid img-thumbnail" alt="photo" />
+            <div class="motto col-12 mt-4">
+              <p>年輕的時候有觸手可及的未來</p>
+              <p>年老的時候就只剩遠在天邊的過去</p>
+            </div>
           </div>
           <div class="w-100"></div>
           <div class="row justify-content-center">
-            <div class="info col-12 mx-0">
-                <p class="h2">韓智傑</p>
-                <p>ZHI-JIE,HAN</p>
-                <p>1992.4.6 | New Taipei</p>
-                <p>mail:bravo3081472@gmail.com</p>
-                <a href="https://github.com/bravo3081472" target="_blank">Github</a>
+            <div class="info col">
+              <h2>韓智傑 ( ZHI-JIE,HAN )</h2>
+              <p>1992.4.6 | New Taipei</p>
+              <p>畢業於：私立黎明技術學院 ( 資訊管理系 )</p>
+              <p>mail:bravo3081472@gmail.com</p>
+              <p>手機電話：0985490031</p>
+              <a href="https://github.com/bravo3081472" target="_blank">Github</a>
+            </div>
+          </div>
+          <div class="row pt-5 justify-content-center">
+            <div class="info col">
+              <h2>關於我</h2>
+              <p>目前已自學前端工程一年多，主要以線上學習為主，利用下班時間或中午休息時間學習。</p>
+              <p>
+                個性既樂觀也悲觀，樂觀可以使我有動力跟目標，悲觀可以使我看清楚現實，了解自身能力與不足。
+              </p>
+              <p>
+                凡事都以努力的態度向前，但也很清楚努力不一定會成功，成功的因素不會只靠努力就可以了，即便如此只有努力嘗試才會有成功的機會。
+              </p>
+              <h2></h2>
             </div>
           </div>
         </div>
@@ -41,8 +63,9 @@
             <ul>
               <li>HTML5</li>
               <li>CSS3</li>
-              <li>Bootstrap</li>
               <li>RWD</li>
+              <li>Bootstrap</li>
+              <li>Sass & Scss</li>
             </ul>
           </div>
           <div class="col-12 col-sm-3 mx-4 border-top border-danger">
@@ -53,12 +76,15 @@
               <li>REST ful API</li>
               <li>AJAX</li>
               <li>Vue.js</li>
+              <li>Vuex</li>
             </ul>
           </div>
           <div class="col-12 col-sm-3 mx-4 border-top border-danger">
             <h4>其他</h4>
             <ul>
               <li>git版本控制</li>
+              <li>Visual Basic</li>
+              <li>Visual Basic for Applications</li>
             </ul>
           </div>
         </div>
@@ -67,46 +93,52 @@
     <div class="portfolio">
       <div class="container">
         <h2>作品集</h2>
-          <div class="timeline">
-            <div class="row py-5 timeline-pointer">
-              <div class="col-sm-6">
-                <div class="title">
-                  <h4>To do List</h4>
-                </div>
-                <div class="portfolio__info">
-                  <p>簡介:</p>
-                  <ol>
-                    <li>使用HTML5、Bootstrap製作基本切版，並依照自己的想法，增加額外的CSS、RWD版型</li>
-                    <li>使用JavaScript (ES6)語法，使用Vue.js框架製作</li>
-                  </ol>
-                  <a href="https://github.com/bravo3081472/todolist" target="_blank">Github : https://github.com/bravo3081472/todolist</a>
-                </div>
+        <div class="timeline">
+          <div class="row py-5 timeline-pointer">
+            <div class="col-sm-6">
+              <div class="title">
+                <h4>To do List</h4>
               </div>
-              <div class="col-sm-6">
-                <img class="img-fluid" src="../About-my/image/portfolio_ToDoList.jpg" alt="">
-              </div>
-            </div>
-            <div class="row py-5 flex-row-reverse timeline-pointer">
-              <div class="col-sm-6">
-                <div class="title">
-                  <h4>BMI 計算</h4>
-                </div>
-                <div class="portfolio__info">
-                  <ol>
-                    <li>依照六角學院設計圖，進行HTML、CSS切版</li>
-                    <li>除設計圖內容，而外加入自己的想法跟RWD</li>
-                    <li>使用JavaScript製作，資料紀錄儲存在localStorage</li>
-                    <li>獨立開發</li>
-                    <li>開發時間約1天</li>
-                  </ol>
-                  <a href="https://github.com/bravo3081472/BMI-Calculation" target="_blank">Github : https://github.com/bravo3081472/BMI-Calculation</a>
-                </div>
-              </div>
-              <div class="col-sm-6">
-                <img class="img-fluid" src="../About-my/image/portfolio_BMI.jpg" alt="">
+              <div class="portfolio__info">
+                <p>簡介:</p>
+                <ol>
+                  <li>
+                    使用HTML5、Bootstrap製作基本切版，並依照自己的想法，增加額外的CSS、RWD版型
+                  </li>
+                  <li>使用JavaScript (ES6)語法，使用Vue.js框架製作</li>
+                </ol>
+                <a href="https://github.com/bravo3081472/todolist" target="_blank"
+                  >Github : https://github.com/bravo3081472/todolist</a
+                >
               </div>
             </div>
-            <!-- <div class="row py-5 timeline-pointer">
+            <div class="col-sm-6">
+              <img class="img-fluid" src="./image/portfolio_ToDoList.jpg" alt="" />
+            </div>
+          </div>
+          <div class="row py-5 flex-row-reverse timeline-pointer">
+            <div class="col-sm-6">
+              <div class="title">
+                <h4>BMI 計算</h4>
+              </div>
+              <div class="portfolio__info">
+                <ol>
+                  <li>依照六角學院設計圖，進行HTML、CSS切版</li>
+                  <li>除設計圖內容，而外加入自己的想法跟RWD</li>
+                  <li>使用JavaScript製作，資料紀錄儲存在localStorage</li>
+                  <li>獨立開發</li>
+                  <li>開發時間約1天</li>
+                </ol>
+                <a href="https://github.com/bravo3081472/BMI-Calculation" target="_blank"
+                  >Github : https://github.com/bravo3081472/BMI-Calculation</a
+                >
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <img class="img-fluid" src="./image/portfolio_BMI.jpg" alt="" />
+            </div>
+          </div>
+          <!-- <div class="row py-5 timeline-pointer">
               <div class="col-sm-6">
                 <div class="title">
                   <h4>新聞API 串接</h4>
@@ -119,13 +151,25 @@
                 <img class="img-fluid" src="../About-my/image/2322493.jpg" alt="">
               </div>
             </div> -->
-          </div>
         </div>
+      </div>
     </div>
 
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+      integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+      crossorigin="anonymous"
+    ></script>
     <script src="./js/all.js"></script>
   </body>
 </html>
