@@ -17,8 +17,27 @@
     <link rel="stylesheet" href="./css/all.css" />
   </head>
   <body>
-    <div class="about">
-      <div class="container pt-5">
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="#about">關於我 <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#skill">SKILL</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#portfolio">作品集</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <div id="about">
+      <div class="container p-5">
         <div class="row justify-content-center">
           <div class="photo col mb-sm-5">
             <img src="./image/photo.jpg" class="img-fluid img-thumbnail" alt="photo" />
@@ -35,7 +54,10 @@
               <p>畢業於：私立黎明技術學院 ( 資訊管理系 )</p>
               <p>mail:bravo3081472@gmail.com</p>
               <p>手機電話：0985490031</p>
-              <a href="https://github.com/bravo3081472" target="_blank">Github</a>
+              <a href="https://github.com/bravo3081472" target="_blank"
+                >Github
+                <i class="fa-brands fa-github"></i>
+              </a>
             </div>
           </div>
           <div class="row pt-5 justify-content-center">
@@ -43,18 +65,17 @@
               <h2>關於我</h2>
               <p>目前已自學前端工程一年多，主要以線上學習為主，利用下班時間或中午休息時間學習。</p>
               <p>
-                個性既樂觀也悲觀，樂觀可以使我有動力跟目標，悲觀可以使我看清楚現實，了解自身能力與不足。
+                個性既樂觀也悲觀，樂觀可以使我有動力跟目標，悲觀可以使我看清楚現實，進而補足不足之處。
               </p>
               <p>
                 凡事都以努力的態度向前，但也很清楚努力不一定會成功，成功的因素不會只靠努力就可以了，即便如此只有努力嘗試才會有成功的機會。
               </p>
-              <h2></h2>
             </div>
           </div>
         </div>
       </div>
     </div>
-    <div class="skill">
+    <div id="skill">
       <div class="container p-5">
         <h2>SKILL</h2>
         <div class="row justify-content-center mt-5">
@@ -90,38 +111,55 @@
         </div>
       </div>
     </div>
-    <div class="portfolio">
-      <div class="container">
+    <div id="portfolio">
+      <div class="container p-5">
         <h2>作品集</h2>
         <div class="timeline">
           <div class="row py-5 timeline-pointer">
             <div class="col-sm-6">
               <div class="title">
-                <h4>To do List</h4>
+                <h4>蛋糕購物網站</h4>
               </div>
               <div class="portfolio__info">
-                <p>簡介:</p>
                 <ol>
-                  <li>
-                    使用HTML5、Bootstrap製作基本切版，並依照自己的想法，增加額外的CSS、RWD版型
-                  </li>
-                  <li>使用JavaScript (ES6)語法，使用Vue.js框架製作</li>
+                  <span>主要功能</span>
+                  <li>撈取 API 商品資料，並根據 API 商品資料是否啟用來決定商品是否上架</li>
+                  <li>購買商品可以加入優惠碼決定是否打折</li>
+                  <li>將商品加入購物車，購物車結帳後會列出清單填寫收寄人資訊</li>
+                  <li>根據帳號系統管控是否加入管理者頁面</li>
+                  <li>管理者頁面可以新增、編輯、刪除商品跟優惠碼，並查閱所有的訂單資訊</li>
                 </ol>
-                <a href="https://github.com/bravo3081472/todolist" target="_blank"
-                  >Github : https://github.com/bravo3081472/todolist</a
-                >
+                <ol>
+                  <span>開發部分</span>
+                  <li>資料庫：主要是使用六角學院提供的 JSON API</li>
+                  <li>CSS：主要使用 Bootstrap，並以此為基礎對於細節及 RWD 加上自己寫的 SCSS</li>
+                  <li>為了跟 Bootstrap 命名分開，CSS 命名使用 BEM 方式命名</li>
+                  <li>JavaScript：主要是使用 Vue.js 跟 Vue Cli</li>
+                  <li>註解部分加入 JSdoc</li>
+                  <li>獨立開發</li>
+                  <li>
+                    開發時間：1~2個月，中間有重構過網站，主要是增加新功能並將分散的 CSS 集中管理
+                  </li>
+                </ol>
+                <a href="https://github.com/bravo3081472/Vue-Cake" target="_blank">
+                  <i class="fa-brands fa-github"></i>
+                  https://github.com/bravo3081472/Vue-Cake
+                </a>
               </div>
             </div>
             <div class="col-sm-6">
-              <img class="img-fluid" src="./image/portfolio_ToDoList.jpg" alt="" />
+              <img class="img-fluid" src="./image/caketest_products.jpg" alt="" />
+              <img class="img-fluid mt-1 w-25" src="./image/caketest_products_rwd.jpg" alt="" />
             </div>
           </div>
+
           <div class="row py-5 flex-row-reverse timeline-pointer">
             <div class="col-sm-6">
               <div class="title">
                 <h4>BMI 計算</h4>
               </div>
               <div class="portfolio__info">
+                <span>簡介:</span>
                 <ol>
                   <li>依照六角學院設計圖，進行HTML、CSS切版</li>
                   <li>除設計圖內容，而外加入自己的想法跟RWD</li>
@@ -129,28 +167,39 @@
                   <li>獨立開發</li>
                   <li>開發時間約1天</li>
                 </ol>
-                <a href="https://github.com/bravo3081472/BMI-Calculation" target="_blank"
-                  >Github : https://github.com/bravo3081472/BMI-Calculation</a
-                >
+                <a href="https://github.com/bravo3081472/BMI-Calculation" target="_blank">
+                  <i class="fa-brands fa-github"></i>
+                  Github : https://github.com/bravo3081472/BMI-Calculation
+                </a>
               </div>
             </div>
             <div class="col-sm-6">
               <img class="img-fluid" src="./image/portfolio_BMI.jpg" alt="" />
             </div>
           </div>
-          <!-- <div class="row py-5 timeline-pointer">
-              <div class="col-sm-6">
-                <div class="title">
-                  <h4>新聞API 串接</h4>
-                </div>
-                <div class="portfolio__info">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Et ipsam quibusdam sunt voluptate pariatur explicabo omnis. Ex assumenda repellendus repudiandae.
-                </div>
+          <div class="row py-5 timeline-pointer">
+            <div class="col-sm-6">
+              <div class="title">
+                <h4>To do List</h4>
               </div>
-              <div class="col-sm-6">
-                <img class="img-fluid" src="../About-my/image/2322493.jpg" alt="">
+              <div class="portfolio__info">
+                <span>簡介:</span>
+                <ol>
+                  <li>
+                    使用HTML5、Bootstrap製作基本切版，並依照自己的想法，增加額外的CSS、RWD版型
+                  </li>
+                  <li>使用JavaScript (ES6)語法，使用Vue.js框架製作</li>
+                </ol>
+                <a href="https://github.com/bravo3081472/todolist" target="_blank">
+                  <i class="fa-brands fa-github"></i>
+                  Github : https://github.com/bravo3081472/todolist
+                </a>
               </div>
-            </div> -->
+            </div>
+            <div class="col-sm-6">
+              <img class="img-fluid" src="./image/portfolio_ToDoList.jpg" alt="" />
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -170,6 +219,7 @@
       integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
       crossorigin="anonymous"
     ></script>
+    <script src="https://kit.fontawesome.com/deb8a1c619.js" crossorigin="anonymous"></script>
     <script src="./js/all.js"></script>
   </body>
 </html>
