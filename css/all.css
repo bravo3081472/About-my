@@ -74,6 +74,9 @@
 .portfolio__info span {
   font-size: 1.4rem; }
 
+.w-70 {
+  width: 70%; }
+
 .timeline {
   position: relative; }
   .timeline:after {
